@@ -262,6 +262,376 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jersay.cn/2018/12/26/Flutter02-SDK安装和环境配置/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jersay">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jersay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/26/Flutter02-SDK安装和环境配置/" itemprop="url">Flutter02-SDK安装和环境配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-26T16:15:35+08:00">
+                2018-12-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Flutter学习/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/26/Flutter02-SDK安装和环境配置/" class="leancloud_visitors" data-flag-title="Flutter02-SDK安装和环境配置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="Flutter-SDK安装"><a href="#Flutter-SDK安装" class="headerlink" title="Flutter SDK安装"></a>Flutter SDK安装</h5><p><em>以下以在Mac系统下操作为例</em><br>首先在本地创建一个文件夹来存放Flutter SDK，比如我在Documents下创建一个Flutter:<br><img src="https://upload-images.jianshu.io/upload_images/1013525-a578d713a925e6b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200" alt="image.png"></p>
+<h6 id="安装方式一"><a href="#安装方式一" class="headerlink" title="安装方式一:"></a>安装方式一:</h6><p>手动下载Flutter SDK<br>官网：<a href="https://flutter.io/docs/get-started/install/macos#" target="_blank" rel="noopener">https://flutter.io/docs/get-started/install/macos#</a><br>Github：<a href="https://github.com/flutter/flutter/releases" target="_blank" rel="noopener">https://github.com/flutter/flutter/releases</a><br>下载完成后解压到刚才新建的文件夹下。</p>
+<h6 id="安装方式二"><a href="#安装方式二" class="headerlink" title="安装方式二:"></a>安装方式二:</h6><p>终端克隆</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/flutter/flutter.git</span><br></pre></td></tr></table></figure>
+<p>如图所示：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-011293925425227e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="image.png"><br>安装完成后会在Flutter下自动生成一个flutter目录，用来存放SDK，用<a href="http://jersay.cn/2018/12/25/Mac%E4%B8%8A%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%9A%84%E6%A0%91%E7%BB%93%E6%9E%84/">tree命令</a>查看目录结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">├── AUTHORS</span><br><span class="line">├── CODE_OF_CONDUCT.md</span><br><span class="line">├── CONTRIBUTING.md</span><br><span class="line">├── LICENSE</span><br><span class="line">├── PATENTS</span><br><span class="line">├── README.md</span><br><span class="line">├── analysis_options.yaml</span><br><span class="line">├── bin</span><br><span class="line">│   ├── flutter</span><br><span class="line">│   ├── flutter.bat</span><br><span class="line">│   └── internal</span><br><span class="line">├── dartdoc_options.yaml</span><br><span class="line">├── dev</span><br><span class="line">│   ├── README.md</span><br><span class="line">│   ├── automated_tests</span><br><span class="line">│   ├── benchmarks</span><br><span class="line">│   ├── bots</span><br><span class="line">│   ├── ci</span><br><span class="line">│   ├── devicelab</span><br><span class="line">│   ├── docs</span><br><span class="line">│   ├── integration_tests</span><br><span class="line">│   ├── manual_tests</span><br><span class="line">│   ├── missing_dependency_tests</span><br><span class="line">│   ├── snippets</span><br><span class="line">│   └── tools</span><br><span class="line">├── examples</span><br><span class="line">│   ├── README.md</span><br><span class="line">│   ├── catalog</span><br><span class="line">│   ├── flutter_gallery</span><br><span class="line">│   ├── flutter_view</span><br><span class="line">│   ├── hello_world</span><br><span class="line">│   ├── layers</span><br><span class="line">│   ├── platform_channel</span><br><span class="line">│   ├── platform_channel_swift</span><br><span class="line">│   ├── platform_view</span><br><span class="line">│   └── stocks</span><br><span class="line">├── flutter_console.bat</span><br><span class="line">└── packages</span><br><span class="line">    ├── analysis_options.yaml</span><br><span class="line">    ├── flutter</span><br><span class="line">    ├── flutter_driver</span><br><span class="line">    ├── flutter_goldens</span><br><span class="line">    ├── flutter_goldens_client</span><br><span class="line">    ├── flutter_localizations</span><br><span class="line">    ├── flutter_test</span><br><span class="line">    ├── flutter_tools</span><br><span class="line">    └── fuchsia_remote_debug_protocol</span><br></pre></td></tr></table></figure></p>
+<h5 id="Flutter环境配置"><a href="#Flutter环境配置" class="headerlink" title="Flutter环境配置"></a>Flutter环境配置</h5><p>为了以后使用方便，我们需要配置一下环境，需要将项目根目录下bin路径加入环境变量PATH中，打开~/.bash_profile文件，修改环境变量，操作如下：</p>
+<h6 id="1、打开-bash-profile"><a href="#1、打开-bash-profile" class="headerlink" title="1、打开~/.bash_profile"></a>1、打开~/.bash_profile</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open -e .bash_profile #执行此命令打开~/.bash_profile</span><br></pre></td></tr></table></figure>
+<h6 id="2、配置环境变量"><a href="#2、配置环境变量" class="headerlink" title="2、配置环境变量"></a>2、配置环境变量</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&#123;flutter下bin目录路径&#125;:$PATH #export PATH=/Users/GRR/Documents/Flutter/flutter/bin:$PATH 我本地的路径</span><br></pre></td></tr></table></figure>
+<p>如下图所示：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-93647a7302cb46c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800" alt="image.png"></p>
+<h6 id="3、更新环境配置"><a href="#3、更新环境配置" class="headerlink" title="3、更新环境配置"></a>3、更新环境配置</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bash_profile #执行此命令更新环境配置</span><br></pre></td></tr></table></figure>
+<h6 id="4、验证安装结果"><a href="#4、验证安装结果" class="headerlink" title="4、验证安装结果"></a>4、验证安装结果</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter #执行此命令验证安装结果</span><br></pre></td></tr></table></figure>
+<p><em>如果挂了梯子，请跳过第5步；</em></p>
+<p><em>如果没挂梯子，你可能会看到以下提示：</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Jersay:flutter GRR$ flutter</span><br><span class="line">Downloading Dart SDK from Flutter engine 215ca15600887ffeffef2df3f216e0189159150e...</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:--  0:02:45 --:--:--     0</span><br><span class="line">curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to storage.googleapis.com:443 </span><br><span class="line"></span><br><span class="line">Failed to retrieve the Dart SDK from: https://storage.googleapis.com/flutter_infra/flutter/215ca15600887ffeffef2df3f216e0189159150e/dart-sdk-darwin-x64.zip</span><br><span class="line">If you&apos;re located in China, please see this page:</span><br><span class="line">  https://flutter.io/community/china</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1013525-c5ffe28545b88c04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200" alt="image.png"><br>根据提示，我们来到了官网的<a href="https://flutter.io/community/china" target="_blank" rel="noopener">这里</a>，往下拉，官网写着(请允许我装个逼)：</p>
+<blockquote>
+<p>If you’re installing or using Flutter in China, it may be helpful to use a trustworthy local mirror site that hosts Flutter’s dependencies. To instruct the Flutter tool to use an alternate storage location, you need to set two environment variables, PUB_HOSTED_URL and FLUTTER_STORAGE_BASE_URL, before running the flutter command.<br>Taking MacOS or Linux as an example, here are the first few steps in the setup process for using a mirror site. Run the following in a Bash shell from the directory where you wish to store your local Flutter clone:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export PUB_HOSTED_URL=https://pub.flutter-io.cn</span><br><span class="line">export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br><span class="line">git clone -b dev https://github.com/flutter/flutter.git</span><br><span class="line">export PATH=&quot;$PWD/flutter/bin:$PATH&quot;</span><br><span class="line">cd ./flutter</span><br><span class="line">flutter doctor</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>解决办法就是在环境变量里加上镜像地址，为国人量身打造。</p>
+<h6 id="5、配置镜像地址"><a href="#5、配置镜像地址" class="headerlink" title="5、配置镜像地址"></a>5、配置镜像地址</h6><p>重复上边步骤1、2、3添加以下镜像地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PUB_HOSTED_URL=https://pub.flutter-io.cn</span><br><span class="line">export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br></pre></td></tr></table></figure></p>
+<p>继续执行<code>flutter</code>命令<br>结果如下(部分)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter</span><br><span class="line">Building flutter tool...</span><br><span class="line">  ╔════════════════════════════════════════════════════════════════════════════╗</span><br><span class="line">  ║ A new version of Flutter is available!                                     ║</span><br><span class="line">  ║                                                                            ║</span><br><span class="line">  ║ To update to the latest version, run &quot;flutter upgrade&quot;.                    ║</span><br><span class="line">  ╚════════════════════════════════════════════════════════════════════════════╝</span><br></pre></td></tr></table></figure></p>
+<h6 id="6、更新Flutter"><a href="#6、更新Flutter" class="headerlink" title="6、更新Flutter"></a>6、更新Flutter</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter upgrade #执行此命令更新flutter</span><br></pre></td></tr></table></figure>
+<p>结果如下(部分)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter upgrade</span><br><span class="line">Upgrading Flutter from /Users/GRR/Documents/Flutter/flutter...</span><br><span class="line">From https://github.com/flutter/flutter</span><br><span class="line">   d05fa45fb..4d2d800d9  master     -&gt; origin/master</span><br><span class="line">Updating d05fa45fb..4d2d800d9</span><br><span class="line"> 5 files changed, 219 insertions(+), 48 deletions(-)</span><br><span class="line"></span><br><span class="line">Upgrading engine...</span><br><span class="line">Downloading Dart SDK from Flutter engine d8c5ec0e11b51ff385327fe5939f9405f89f46c7...</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line"></span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</span><br><span class="line">  2 49.7M    2 1465k    0     0  3578k      0  0:00:14 --:--:--  0:00:14 3573k</span><br><span class="line"> 14 49.7M   14 7485k    0     0  5347k      0  0:00:09  0:00:01  0:00:08 5346k</span><br></pre></td></tr></table></figure></p>
+<h6 id="7、安装Flutter剩余依赖工具"><a href="#7、安装Flutter剩余依赖工具" class="headerlink" title="7、安装Flutter剩余依赖工具"></a>7、安装Flutter剩余依赖工具</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor #执行此命令安装依赖</span><br></pre></td></tr></table></figure>
+<p>结果如下(部分):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter doctor</span><br><span class="line">Doctor summary (to see all details, run flutter doctor -v):</span><br><span class="line">[✓] Flutter (Channel master, v1.1.5-pre.24, on Mac OS X 10.14.2 18C54, locale zh-Hans-CN)</span><br><span class="line">[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)</span><br><span class="line">    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses</span><br></pre></td></tr></table></figure></p>
+<h5 id="AndroidStudio-Flutter插件安装"><a href="#AndroidStudio-Flutter插件安装" class="headerlink" title="AndroidStudio Flutter插件安装"></a>AndroidStudio Flutter插件安装</h5><h6 id="1、安装Flutter插件"><a href="#1、安装Flutter插件" class="headerlink" title="1、安装Flutter插件"></a>1、安装Flutter插件</h6><p><code>AndroidStudio-&gt;Preferences-&gt;plugins，搜素Flutter</code><br><img src="https://upload-images.jianshu.io/upload_images/1013525-e7f0436b3bfc5331.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="image.png"></p>
+<h6 id="2、设置Flutter-SDK路径"><a href="#2、设置Flutter-SDK路径" class="headerlink" title="2、设置Flutter SDK路径"></a>2、设置Flutter SDK路径</h6><p><img src="https://upload-images.jianshu.io/upload_images/1013525-8dfe05ac68ded2c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter SDK路径.png"></p>
+<h6 id="3、新建Flutter项目"><a href="#3、新建Flutter项目" class="headerlink" title="3、新建Flutter项目"></a>3、新建Flutter项目</h6><p>步骤和新建Android项目一样：<br><code>File-&gt;New-&gt;New Flutter Project</code><br><img src="https://upload-images.jianshu.io/upload_images/1013525-fd5b4aa57b6aba9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="新建Flutter项目.png"><br><img src="https://upload-images.jianshu.io/upload_images/1013525-2bc81110a9a3b347.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter项目包名.png"></p>
+<h6 id="4、Flutter项目结构"><a href="#4、Flutter项目结构" class="headerlink" title="4、Flutter项目结构"></a>4、Flutter项目结构</h6><p>项目主要有3个Module构成分别是<code>lib、android、ios</code>，<br>lib下的<code>main.dart</code>是程序入口<br><img src="https://upload-images.jianshu.io/upload_images/1013525-63116c5dbb0460f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter项目结构.png"></p>
+<h6 id="5、Demo代码预览"><a href="#5、Demo代码预览" class="headerlink" title="5、Demo代码预览"></a>5、Demo代码预览</h6><p>程序入口<code>main.dart</code>中代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">import &apos;package:flutter/material.dart&apos;;</span><br><span class="line"></span><br><span class="line">void main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line">class MyApp extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return MaterialApp(</span><br><span class="line">      title: &apos;Flutter Demo&apos;,</span><br><span class="line">      theme: ThemeData(</span><br><span class="line">        primarySwatch: Colors.blue,</span><br><span class="line">      ),</span><br><span class="line">      home: MyHomePage(title: &apos;Flutter Demo Home Page&apos;),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class MyHomePage extends StatefulWidget &#123;</span><br><span class="line">  MyHomePage(&#123;Key key, this.title&#125;) : super(key: key);</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _MyHomePageState createState() =&gt; _MyHomePageState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _MyHomePageState extends State&lt;MyHomePage&gt; &#123;</span><br><span class="line">  int _counter = 0;</span><br><span class="line"></span><br><span class="line">  void _incrementCounter() &#123;</span><br><span class="line">    setState(() &#123;</span><br><span class="line">      _counter++;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(widget.title),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(</span><br><span class="line">              &apos;You have pushed the button this many times:&apos;,</span><br><span class="line">            ),</span><br><span class="line">            Text(</span><br><span class="line">              &apos;$_counter&apos;,</span><br><span class="line">              style: Theme.of(context).textTheme.display1,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      floatingActionButton: FloatingActionButton(</span><br><span class="line">        onPressed: _incrementCounter,</span><br><span class="line">        tooltip: &apos;Increment&apos;,</span><br><span class="line">        child: Icon(Icons.add),</span><br><span class="line">      ), </span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h6 id="6、运行Flutter项目"><a href="#6、运行Flutter项目" class="headerlink" title="6、运行Flutter项目"></a>6、运行Flutter项目</h6><p><img src="https://upload-images.jianshu.io/upload_images/1013525-6875774db6061c33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="run.png"><br>选择设备，点击右上角的绿色三角形按钮或者使用快捷键<code>^R</code>运行程序。</p>
+<p>在Android设备运行效果如下：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-abec9a6fca13e1b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400" alt="Android_Flutter.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jersay.cn/2018/12/26/Flutter01-Flutter介绍/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jersay">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jersay">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/26/Flutter01-Flutter介绍/" itemprop="url">Flutter01-Flutter介绍</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-26T16:14:29+08:00">
+                2018-12-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Flutter学习/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/26/Flutter01-Flutter介绍/" class="leancloud_visitors" data-flag-title="Flutter01-Flutter介绍">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="Flutter是什么？"><a href="#Flutter是什么？" class="headerlink" title="Flutter是什么？"></a>Flutter是什么？</h4><blockquote>
+<p>Flutter是 Google推出并开源的移动应用开发框架，主打跨平台、高保真、高性能。开发者可以通过 Dart语言开发 App，一套代码同时运行在 iOS 和 Android平台。 Flutter提供了丰富的组件、接口，开发者可以很快地为 Flutter添加 native扩展。同时 Flutter还使用 Native引擎渲染视图，这无疑能为用户提供良好的体验</p>
+</blockquote>
+<h4 id="Flutter有哪些优点？"><a href="#Flutter有哪些优点？" class="headerlink" title="Flutter有哪些优点？"></a>Flutter有哪些优点？</h4><h5 id="跨平台自绘引擎"><a href="#跨平台自绘引擎" class="headerlink" title="跨平台自绘引擎"></a>跨平台自绘引擎</h5><blockquote>
+<p>Flutter与用于构建移动应用程序的其它大多数框架不同，因为Flutter既不使用WebView，也不使用操作系统的原生控件。 相反，Flutter使用自己的高性能渲染引擎来绘制widget。这样不仅可以保证在Android和iOS上UI的一致性，而且也可以避免对原生控件依赖而带来的限制及高昂的维护成本。<br>Flutter使用Skia作为其2D渲染引擎，Skia是Google的一个2D图形处理函数库，包含字型、坐标转换，以及点阵图都有高效能且简洁的表现，Skia是跨平台的，并提供了非常友好的API，目前Google Chrome浏览器和Android均采用Skia作为其绘图引擎，值得一提的是，由于Android系统已经内置了Skia，所以Flutter在打包APK(Android应用安装包)时，不需要再将Skia打入APK中，但iOS系统并未内置Skia，所以构建iPA时，也必须将Skia一起打包，这也是为什么Flutter APP的Android安装包比iOS安装包小的主要原因。</p>
+</blockquote>
+<h5 id="高性能"><a href="#高性能" class="headerlink" title="高性能"></a>高性能</h5><blockquote>
+<p>Flutter高性能主要靠两点来保证，首先，Flutter APP采用Dart语言开发。Dart在 JIT（即时编译）模式下，速度与 JavaScript基本持平。但是 Dart支持 AOT，当以 AOT模式运行时，JavaScript便远远追不上了。速度的提升对高帧率下的视图数据计算很有帮助。其次，Flutter使用自己的渲染引擎来绘制UI，布局数据等由Dart语言直接控制，所以在布局过程中不需要像RN那样要在JavaScript和Native之间通信，这在一些滑动和拖动的场景下具有明显优势，因为在滑动和拖动过程往往都会引起布局发生变化，所以JavaScript需要和Native之间不停的同步布局信息，这和在浏览器中要JavaScript频繁操作DOM所带来的问题是相同的，都会带来比较可观的性能开销。</p>
+</blockquote>
+<h4 id="Flutter用什么语言开发？"><a href="#Flutter用什么语言开发？" class="headerlink" title="Flutter用什么语言开发？"></a>Flutter用什么语言开发？</h4><h5 id="目前程序运行的两种方式"><a href="#目前程序运行的两种方式" class="headerlink" title="目前程序运行的两种方式"></a>目前程序运行的两种方式</h5><blockquote>
+<p>程序主要有两种运行方式：静态编译与动态解释。静态编译的程序在执行前全部被翻译为机器码，通常将这种类型称为AOT （Ahead of time）即 “提前编译”；而解释执行的则是一句一句边翻译边运行，通常将这种类型称为JIT（Just-in-time）即“即时编译”。AOT程序的典型代表是用C/C++开发的应用，它们必须在执行前编译成机器码，而JIT的代表则非常多，如JavaScript、python等，事实上，所有脚本语言都支持JIT模式。但需要注意的是JIT和AOT指的是程序运行方式，和编程语言并非强关联的，有些语言既可以以JIT方式运行也可以以AOT方式运行，如Java、Python，它们可以在第一次执行时编译成中间字节码、然后在之后执行时可以直接执行字节码，也许有人会说，中间字节码并非机器码，在程序执行时仍然需要动态将字节码转为机器码，是的，这没有错，不过通常我们区分是否为AOT的标准就是看代码在执行之前是否需要编译，只要需要编译，无论其编译产物是字节码还是机器码，都属于AOT。在此，读者不必纠结于概念，概念就是为了传达精神而发明的，只要读者能够理解其原理即可，得其神忘其形。</p>
+</blockquote>
+<h5 id="Flutter选择用Dart开发的原因"><a href="#Flutter选择用Dart开发的原因" class="headerlink" title="Flutter选择用Dart开发的原因"></a>Flutter选择用Dart开发的原因</h5><h6 id="1、开发效率高"><a href="#1、开发效率高" class="headerlink" title="1、开发效率高"></a>1、开发效率高</h6><blockquote>
+<p>Dart运行时和编译器支持Flutter的两个关键特性的组合：<br><strong>基于JIT的快速开发周期：</strong>Flutter在开发阶段采用，采用JIT模式，这样就避免了每次改动都要进行编译，极大的节省了开发时间；<br><strong>基于AOT的发布包:</strong> Flutter在发布时可以通过AOT生成高效的ARM代码以保证应用性能。而JavaScript则不具有这个能力。</p>
+</blockquote>
+<h6 id="2、高性能"><a href="#2、高性能" class="headerlink" title="2、高性能"></a>2、高性能</h6><blockquote>
+<p>Flutter旨在提供流畅、高保真的的UI体验。为了实现这一点，Flutter中需要能够在每个动画帧中运行大量的代码。这意味着需要一种既能提供高性能的语言，而不会出现会丢帧的周期性暂停，而Dart支持AOT，在这一点上可以做的比JavaScript更好。</p>
+</blockquote>
+<h6 id="3、快速内存分配"><a href="#3、快速内存分配" class="headerlink" title="3、快速内存分配"></a>3、快速内存分配</h6><blockquote>
+<p>Flutter框架使用函数式流，它很大程度上依赖于底层的内存分配器，因此，能够有效地处理小的、短期的内存分配会非常重要，所以在缺乏此功能的语言中Flutter无法有效地工作；当然Chrome V8的JavaScript引擎在内存分配上也已经做的很好，事实上Dart开发团队很多成员都是来自Chrome团队的，所以在内存分配上Dart并不能作为超越JavaScript的优势，而对于Flutter来说，它需要这样的特性，而Dart也正好满足而已。</p>
+</blockquote>
+<h6 id="4、类型安全"><a href="#4、类型安全" class="headerlink" title="4、类型安全"></a>4、类型安全</h6><blockquote>
+<p>由于Dart是类型安全的语言，支持静态类型检测，可以在编译前发现一些类型错误，排除潜在问题。这一点对于前端开发者来说可能会更有说服力，由于JavaScript是一个弱类型语言，前端社区出现了很多给JavaScript代码添加静态类型检测的扩展语言和工具，如：Coffeescript、微软的TypeScript以及Facebook的Flow。相比之下，Dart本身支持静态类型，这是它的一个重要优势。</p>
+</blockquote>
+<h6 id="5、Dart团队与Flutter团队合作紧密"><a href="#5、Dart团队与Flutter团队合作紧密" class="headerlink" title="5、Dart团队与Flutter团队合作紧密"></a>5、Dart团队与Flutter团队合作紧密</h6><blockquote>
+<p>Flutter团队可以获得更多、更方便的支持，正如Flutter官网所述“我们有机会与Dart社区密切合作，Dart社区正在积极投入资源改进Dart在Flutter中的使用。例如，当我们采用Dart时，该语言没有提供生成原生二进制文件的工具链（这对于实现可预测的高性能是很有帮助的），但是现在它实现了，因为Dart团队为Flutter构建了它。同样，Dart VM之前已经针对吞吐量进行了优化，但团队现在正在优化VM的延迟时间，这对于Flutter的工作负载更为重要。”</p>
+</blockquote>
+<h4 id="Flutter框架结构"><a href="#Flutter框架结构" class="headerlink" title="Flutter框架结构"></a>Flutter框架结构</h4><p><img src="https://upload-images.jianshu.io/upload_images/1013525-0df40410f6418616.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h5 id="Flutter-Framework"><a href="#Flutter-Framework" class="headerlink" title="Flutter Framework"></a>Flutter Framework</h5><blockquote>
+<p>这是一个纯 Dart实现的 SDK，它实现了一套基础库，从低向上，我们来简单介绍一下：<br>底下两层（Foundation和Animation、Painting、Gestures）在Google的一些视频中被合并为一个dart UI层，对应的是Flutter中的dart:ui包，它是Flutter引擎暴露的底层UI库，提供动画、手势及绘制能力。<br>Rendering层，这一层是一个抽象的布局层，它依赖于dart UI层，Rendering层会构建一个UI树，当UI树有变化时，会计算出变化部分，然后再更新UI树，最终将UI树绘制到屏幕上，这个类似于React中的虚拟DOM。Rendering层可以说是Flutter UI框架最核心的部分，它除了确定每个UI元素的位置、大小之外还要进行坐标变换、绘制(调用底层dart:ui)。<br>Widgets层是Flutter提供的的一套基础组件库，在基础组件库之上，Flutter还提供了 Material 和Cupertino两种视觉风格的组件库。而我们Flutter开发的大多数场景，只是和这两层打交道。</p>
+</blockquote>
+<h5 id="Flutter-Engine"><a href="#Flutter-Engine" class="headerlink" title="Flutter Engine"></a>Flutter Engine</h5><blockquote>
+<p>这是一个纯 C++实现的 SDK，其中包括了 Skia引擎、Dart运行时、文字排版引擎等。在代码调用 dart:ui库时，调用最终会走到Engine层，然后实现真正的绘制逻辑。</p>
+</blockquote>
+<h4 id="学习Flutter的网站"><a href="#学习Flutter的网站" class="headerlink" title="学习Flutter的网站"></a>学习Flutter的网站</h4><p><a href="https://flutter.io/" target="_blank" rel="noopener">Flutter官网</a><br><a href="https://flutter-io.cn/" target="_blank" rel="noopener">Flutter社区中文资源</a><br><a href="https://flutterchina.club/" target="_blank" rel="noopener">Flutter中文网</a><br><a href="https://github.com/flutter/flutter" target="_blank" rel="noopener">Github Flutter</a><br>以及<a href="https://juejin.im" target="_blank" rel="noopener">掘金</a>、<a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a>等</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://jersay.cn/2018/12/26/Hexo绑定自己的域名/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -374,189 +744,6 @@
 <h6 id="Hexo新建CNAME文件"><a href="#Hexo新建CNAME文件" class="headerlink" title="Hexo新建CNAME文件"></a>Hexo新建CNAME文件</h6><p>进入本地hexo中source目录下，新建名为<code>CNAME</code>的文件，<strong>不要任何后缀</strong>，在文件中输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jersay.cn</span><br></pre></td></tr></table></figure></p>
 <p>然后在hexo目录下执行以下命令重新部署hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <h6 id="Github-Pages设置"><a href="#Github-Pages设置" class="headerlink" title="Github Pages设置"></a>Github Pages设置</h6><p>回到Github，找到Github Pages仓库，点击<code>Setting</code>，往下拉找到<code>Github Pages</code>相关设置，在<code>Custom domain</code>中填入之前注册的域名，点击<code>Save</code>，至此，就可以通过<a href="http://jersay.cn/">jersay.cn</a>、<a href="http://www.jersay.cn/" target="_blank" rel="noopener">www.jersay.cn</a>、<a href="http://jersayzhang.github.io" target="_blank" rel="noopener">JersayZhang.github.io</a>来访问博客了。<br><img src="https://upload-images.jianshu.io/upload_images/1013525-e5d5d336d709f2f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/900" alt="GithubPages.png"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://jersay.cn/2018/12/25/Flutter01-SDK安装和环境配置/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jersay">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jersay">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/25/Flutter01-SDK安装和环境配置/" itemprop="url">Flutter01-SDK安装和环境配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-25T17:37:01+08:00">
-                2018-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter学习/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/12/25/Flutter01-SDK安装和环境配置/" class="leancloud_visitors" data-flag-title="Flutter01-SDK安装和环境配置">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h5 id="Flutter-SDK安装"><a href="#Flutter-SDK安装" class="headerlink" title="Flutter SDK安装"></a>Flutter SDK安装</h5><p><em>以下以在Mac系统下操作为例</em><br>首先在本地创建一个文件夹来存放Flutter SDK，比如我在Documents下创建一个Flutter:<br><img src="https://upload-images.jianshu.io/upload_images/1013525-a578d713a925e6b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200" alt="image.png"></p>
-<h6 id="安装方式一"><a href="#安装方式一" class="headerlink" title="安装方式一:"></a>安装方式一:</h6><p>手动下载Flutter SDK<br>官网：<a href="https://flutter.io/docs/get-started/install/macos#" target="_blank" rel="noopener">https://flutter.io/docs/get-started/install/macos#</a><br>Github：<a href="https://github.com/flutter/flutter/releases" target="_blank" rel="noopener">https://github.com/flutter/flutter/releases</a><br>下载完成后解压到刚才新建的文件夹下。</p>
-<h6 id="安装方式二"><a href="#安装方式二" class="headerlink" title="安装方式二:"></a>安装方式二:</h6><p>终端克隆</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/flutter/flutter.git</span><br></pre></td></tr></table></figure>
-<p>如图所示：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-011293925425227e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="image.png"><br>安装完成后会在Flutter下自动生成一个flutter目录，用来存放SDK，用<a href="http://jersay.cn/2018/12/25/Mac%E4%B8%8A%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%9A%84%E6%A0%91%E7%BB%93%E6%9E%84/">tree命令</a>查看目录结构：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">├── AUTHORS</span><br><span class="line">├── CODE_OF_CONDUCT.md</span><br><span class="line">├── CONTRIBUTING.md</span><br><span class="line">├── LICENSE</span><br><span class="line">├── PATENTS</span><br><span class="line">├── README.md</span><br><span class="line">├── analysis_options.yaml</span><br><span class="line">├── bin</span><br><span class="line">│   ├── flutter</span><br><span class="line">│   ├── flutter.bat</span><br><span class="line">│   └── internal</span><br><span class="line">├── dartdoc_options.yaml</span><br><span class="line">├── dev</span><br><span class="line">│   ├── README.md</span><br><span class="line">│   ├── automated_tests</span><br><span class="line">│   ├── benchmarks</span><br><span class="line">│   ├── bots</span><br><span class="line">│   ├── ci</span><br><span class="line">│   ├── devicelab</span><br><span class="line">│   ├── docs</span><br><span class="line">│   ├── integration_tests</span><br><span class="line">│   ├── manual_tests</span><br><span class="line">│   ├── missing_dependency_tests</span><br><span class="line">│   ├── snippets</span><br><span class="line">│   └── tools</span><br><span class="line">├── examples</span><br><span class="line">│   ├── README.md</span><br><span class="line">│   ├── catalog</span><br><span class="line">│   ├── flutter_gallery</span><br><span class="line">│   ├── flutter_view</span><br><span class="line">│   ├── hello_world</span><br><span class="line">│   ├── layers</span><br><span class="line">│   ├── platform_channel</span><br><span class="line">│   ├── platform_channel_swift</span><br><span class="line">│   ├── platform_view</span><br><span class="line">│   └── stocks</span><br><span class="line">├── flutter_console.bat</span><br><span class="line">└── packages</span><br><span class="line">    ├── analysis_options.yaml</span><br><span class="line">    ├── flutter</span><br><span class="line">    ├── flutter_driver</span><br><span class="line">    ├── flutter_goldens</span><br><span class="line">    ├── flutter_goldens_client</span><br><span class="line">    ├── flutter_localizations</span><br><span class="line">    ├── flutter_test</span><br><span class="line">    ├── flutter_tools</span><br><span class="line">    └── fuchsia_remote_debug_protocol</span><br></pre></td></tr></table></figure></p>
-<h5 id="Flutter环境配置"><a href="#Flutter环境配置" class="headerlink" title="Flutter环境配置"></a>Flutter环境配置</h5><p>为了以后使用方便，我们需要配置一下环境，需要将项目根目录下bin路径加入环境变量PATH中，打开~/.bash_profile文件，修改环境变量，操作如下：</p>
-<h6 id="1、打开-bash-profile"><a href="#1、打开-bash-profile" class="headerlink" title="1、打开~/.bash_profile"></a>1、打开~/.bash_profile</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open -e .bash_profile #执行此命令打开~/.bash_profile</span><br></pre></td></tr></table></figure>
-<h6 id="2、配置环境变量"><a href="#2、配置环境变量" class="headerlink" title="2、配置环境变量"></a>2、配置环境变量</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&#123;flutter下bin目录路径&#125;:$PATH #export PATH=/Users/GRR/Documents/Flutter/flutter/bin:$PATH 我本地的路径</span><br></pre></td></tr></table></figure>
-<p>如下图所示：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-93647a7302cb46c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800" alt="image.png"></p>
-<h6 id="3、更新环境配置"><a href="#3、更新环境配置" class="headerlink" title="3、更新环境配置"></a>3、更新环境配置</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bash_profile #执行此命令更新环境配置</span><br></pre></td></tr></table></figure>
-<h6 id="4、验证安装结果"><a href="#4、验证安装结果" class="headerlink" title="4、验证安装结果"></a>4、验证安装结果</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter #执行此命令验证安装结果</span><br></pre></td></tr></table></figure>
-<p><em>如果挂了梯子，请跳过第5步；</em></p>
-<p><em>如果没挂梯子，你可能会看到以下提示：</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Jersay:flutter GRR$ flutter</span><br><span class="line">Downloading Dart SDK from Flutter engine 215ca15600887ffeffef2df3f216e0189159150e...</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:--  0:02:45 --:--:--     0</span><br><span class="line">curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to storage.googleapis.com:443 </span><br><span class="line"></span><br><span class="line">Failed to retrieve the Dart SDK from: https://storage.googleapis.com/flutter_infra/flutter/215ca15600887ffeffef2df3f216e0189159150e/dart-sdk-darwin-x64.zip</span><br><span class="line">If you&apos;re located in China, please see this page:</span><br><span class="line">  https://flutter.io/community/china</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1013525-c5ffe28545b88c04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/200" alt="image.png"><br>根据提示，我们来到了官网的<a href="https://flutter.io/community/china" target="_blank" rel="noopener">这里</a>，往下拉，官网写着(请允许我装个逼)：</p>
-<blockquote>
-<p>If you’re installing or using Flutter in China, it may be helpful to use a trustworthy local mirror site that hosts Flutter’s dependencies. To instruct the Flutter tool to use an alternate storage location, you need to set two environment variables, PUB_HOSTED_URL and FLUTTER_STORAGE_BASE_URL, before running the flutter command.<br>Taking MacOS or Linux as an example, here are the first few steps in the setup process for using a mirror site. Run the following in a Bash shell from the directory where you wish to store your local Flutter clone:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">export PUB_HOSTED_URL=https://pub.flutter-io.cn</span><br><span class="line">export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br><span class="line">git clone -b dev https://github.com/flutter/flutter.git</span><br><span class="line">export PATH=&quot;$PWD/flutter/bin:$PATH&quot;</span><br><span class="line">cd ./flutter</span><br><span class="line">flutter doctor</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<p>解决办法就是在环境变量里加上镜像地址，为国人量身打造。</p>
-<h6 id="5、配置镜像地址"><a href="#5、配置镜像地址" class="headerlink" title="5、配置镜像地址"></a>5、配置镜像地址</h6><p>重复上边步骤1、2、3添加以下镜像地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export PUB_HOSTED_URL=https://pub.flutter-io.cn</span><br><span class="line">export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br></pre></td></tr></table></figure></p>
-<p>继续执行<code>flutter</code>命令<br>结果如下(部分)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter</span><br><span class="line">Building flutter tool...</span><br><span class="line">  ╔════════════════════════════════════════════════════════════════════════════╗</span><br><span class="line">  ║ A new version of Flutter is available!                                     ║</span><br><span class="line">  ║                                                                            ║</span><br><span class="line">  ║ To update to the latest version, run &quot;flutter upgrade&quot;.                    ║</span><br><span class="line">  ╚════════════════════════════════════════════════════════════════════════════╝</span><br></pre></td></tr></table></figure></p>
-<h6 id="6、更新Flutter"><a href="#6、更新Flutter" class="headerlink" title="6、更新Flutter"></a>6、更新Flutter</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter upgrade #执行此命令更新flutter</span><br></pre></td></tr></table></figure>
-<p>结果如下(部分)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter upgrade</span><br><span class="line">Upgrading Flutter from /Users/GRR/Documents/Flutter/flutter...</span><br><span class="line">From https://github.com/flutter/flutter</span><br><span class="line">   d05fa45fb..4d2d800d9  master     -&gt; origin/master</span><br><span class="line">Updating d05fa45fb..4d2d800d9</span><br><span class="line"> 5 files changed, 219 insertions(+), 48 deletions(-)</span><br><span class="line"></span><br><span class="line">Upgrading engine...</span><br><span class="line">Downloading Dart SDK from Flutter engine d8c5ec0e11b51ff385327fe5939f9405f89f46c7...</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line"></span><br><span class="line">  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0</span><br><span class="line">  2 49.7M    2 1465k    0     0  3578k      0  0:00:14 --:--:--  0:00:14 3573k</span><br><span class="line"> 14 49.7M   14 7485k    0     0  5347k      0  0:00:09  0:00:01  0:00:08 5346k</span><br></pre></td></tr></table></figure></p>
-<h6 id="7、安装Flutter剩余依赖工具"><a href="#7、安装Flutter剩余依赖工具" class="headerlink" title="7、安装Flutter剩余依赖工具"></a>7、安装Flutter剩余依赖工具</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor #执行此命令安装依赖</span><br></pre></td></tr></table></figure>
-<p>结果如下(部分):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Jersay:~ GRR$ flutter doctor</span><br><span class="line">Doctor summary (to see all details, run flutter doctor -v):</span><br><span class="line">[✓] Flutter (Channel master, v1.1.5-pre.24, on Mac OS X 10.14.2 18C54, locale zh-Hans-CN)</span><br><span class="line">[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)</span><br><span class="line">    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses</span><br></pre></td></tr></table></figure></p>
-<h5 id="AndroidStudio-Flutter插件安装"><a href="#AndroidStudio-Flutter插件安装" class="headerlink" title="AndroidStudio Flutter插件安装"></a>AndroidStudio Flutter插件安装</h5><h6 id="1、安装Flutter插件"><a href="#1、安装Flutter插件" class="headerlink" title="1、安装Flutter插件"></a>1、安装Flutter插件</h6><p><code>AndroidStudio-&gt;Preferences-&gt;plugins，搜素Flutter</code><br><img src="https://upload-images.jianshu.io/upload_images/1013525-e7f0436b3bfc5331.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="image.png"></p>
-<h6 id="2、设置Flutter-SDK路径"><a href="#2、设置Flutter-SDK路径" class="headerlink" title="2、设置Flutter SDK路径"></a>2、设置Flutter SDK路径</h6><p><img src="https://upload-images.jianshu.io/upload_images/1013525-8dfe05ac68ded2c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter SDK路径.png"></p>
-<h6 id="3、新建Flutter项目"><a href="#3、新建Flutter项目" class="headerlink" title="3、新建Flutter项目"></a>3、新建Flutter项目</h6><p>步骤和新建Android项目一样：<br><code>File-&gt;New-&gt;New Flutter Project</code><br><img src="https://upload-images.jianshu.io/upload_images/1013525-fd5b4aa57b6aba9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="新建Flutter项目.png"><br><img src="https://upload-images.jianshu.io/upload_images/1013525-2bc81110a9a3b347.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter项目包名.png"></p>
-<h6 id="4、Flutter项目结构"><a href="#4、Flutter项目结构" class="headerlink" title="4、Flutter项目结构"></a>4、Flutter项目结构</h6><p>项目主要有3个Module构成分别是<code>lib、android、ios</code>，<br>lib下的<code>main.dart</code>是程序入口<br><img src="https://upload-images.jianshu.io/upload_images/1013525-63116c5dbb0460f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000" alt="Flutter项目结构.png"></p>
-<h6 id="5、Demo代码预览"><a href="#5、Demo代码预览" class="headerlink" title="5、Demo代码预览"></a>5、Demo代码预览</h6><p>程序入口<code>main.dart</code>中代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">import &apos;package:flutter/material.dart&apos;;</span><br><span class="line"></span><br><span class="line">void main() =&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line">class MyApp extends StatelessWidget &#123;</span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return MaterialApp(</span><br><span class="line">      title: &apos;Flutter Demo&apos;,</span><br><span class="line">      theme: ThemeData(</span><br><span class="line">        primarySwatch: Colors.blue,</span><br><span class="line">      ),</span><br><span class="line">      home: MyHomePage(title: &apos;Flutter Demo Home Page&apos;),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class MyHomePage extends StatefulWidget &#123;</span><br><span class="line">  MyHomePage(&#123;Key key, this.title&#125;) : super(key: key);</span><br><span class="line">  final String title;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  _MyHomePageState createState() =&gt; _MyHomePageState();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class _MyHomePageState extends State&lt;MyHomePage&gt; &#123;</span><br><span class="line">  int _counter = 0;</span><br><span class="line"></span><br><span class="line">  void _incrementCounter() &#123;</span><br><span class="line">    setState(() &#123;</span><br><span class="line">      _counter++;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @override</span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    return Scaffold(</span><br><span class="line">      appBar: AppBar(</span><br><span class="line">        title: Text(widget.title),</span><br><span class="line">      ),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(</span><br><span class="line">              &apos;You have pushed the button this many times:&apos;,</span><br><span class="line">            ),</span><br><span class="line">            Text(</span><br><span class="line">              &apos;$_counter&apos;,</span><br><span class="line">              style: Theme.of(context).textTheme.display1,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      floatingActionButton: FloatingActionButton(</span><br><span class="line">        onPressed: _incrementCounter,</span><br><span class="line">        tooltip: &apos;Increment&apos;,</span><br><span class="line">        child: Icon(Icons.add),</span><br><span class="line">      ), </span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h6 id="6、运行Flutter项目"><a href="#6、运行Flutter项目" class="headerlink" title="6、运行Flutter项目"></a>6、运行Flutter项目</h6><p><img src="https://upload-images.jianshu.io/upload_images/1013525-6875774db6061c33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="run.png"><br>选择设备，点击右上角的绿色三角形按钮或者使用快捷键<code>^R</code>运行程序。</p>
-<p>在Android设备运行效果如下：<br><img src="https://upload-images.jianshu.io/upload_images/1013525-abec9a6fca13e1b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400" alt="Android_Flutter.png"></p>
 
           
         
@@ -958,7 +1145,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
